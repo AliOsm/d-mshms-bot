@@ -1,0 +1,6 @@
+{
+    "python.formatting.blackPath": "/home/aliosm/anaconda3/bin/black",
+    "python.formatting.blackArgs": [
+        "-l 120"
+    ]
+}

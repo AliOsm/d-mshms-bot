@@ -1,0 +1,6 @@
+prodict
+python-Levenshtein==0.12.2
+python-telegram-bot==13.7
+pytz
+requests
+thefuzz==0.19.0
