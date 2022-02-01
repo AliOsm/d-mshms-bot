@@ -1,5 +1,4 @@
 IS_ACTIVE = "is_active"
-SESSION_QUESTIONS = "session_questions"
 QUESTIONS_COUNT = "questions_count"
 USERS_LAST_QUESTION_TIMESTAMP = "users_last_question_timestamp"
 

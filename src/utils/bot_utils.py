@@ -9,7 +9,6 @@ from constants.bot_data_keys import *
 
 def reset_bot_data(bot_data: Dict[str, Any]) -> None:
     bot_data[IS_ACTIVE] = False
-    bot_data[SESSION_QUESTIONS] = list()
     bot_data[QUESTIONS_COUNT] = 0
     bot_data[USERS_LAST_QUESTION_TIMESTAMP] = dict()
 
