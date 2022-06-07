@@ -13,13 +13,13 @@ from constants.bot_data_keys import AUTHENTICATED_USERS
 from handlers.auth_user_handlers import toggle
 from handlers.normal_user_handlers import start, durus, groups, status, text_handler, error_handler
 from tasks.bot_tasks import create_drs_reminder_job
-from tasks.server_tasks import ping_bot_and_backend_host
+from tasks.server_tasks import ping_bot_host
 from utils.bot_utils import reset_bot_data
 from utils.file_utils import read_json
 
 
 def add_tasks(job_queue: JobQueue) -> None:
-    job_queue.run_repeating(ping_bot_and_backend_host, interval=datetime.timedelta(minutes=5))
+    job_queue.run_repeating(ping_bot_host, interval=datetime.timedelta(minutes=5))
 
     weekly_durus_tasks: List[Dict[str, Union[str, int]]] = read_json("data/weekly_durus_tasks.json")
     for drs_task in weekly_durus_tasks:
